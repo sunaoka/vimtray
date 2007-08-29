@@ -1,0 +1,5 @@
+2007-08-29  SUNAOKA Norifumi  <sunaoka at gmail.com>
+
+	* version 1.0:
+	first release.
+
