@@ -1,6 +1,6 @@
 object ConfigForm: TConfigForm
-  Left = 224
-  Top = 698
+  Left = 198
+  Top = 402
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'VimTray'

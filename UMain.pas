@@ -27,7 +27,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, UShell, CoolTrayIcon, Menus, XPMenu, ShellAPI, ImgList, StdCtrls,
+  Dialogs, UShell, CoolTrayIcon, Menus, ShellAPI, ImgList, StdCtrls,
   IniFiles;
 
 type

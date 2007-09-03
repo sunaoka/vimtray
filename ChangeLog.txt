@@ -1,3 +1,8 @@
+2007-09-03  SUNAOKA Norifumi  <sunaoka at gmail.com>
+
+	* UMain.pas: uses
+	Delete needless Uses paragraph.
+
 2007-08-29  SUNAOKA Norifumi  <sunaoka at gmail.com>
 
 	* version 1.0:
