@@ -1,11 +1,11 @@
 object ConfigForm: TConfigForm
-  Left = 198
-  Top = 402
+  Left = 196
+  Top = 367
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'VimTray'
-  ClientHeight = 159
-  ClientWidth = 462
+  ClientHeight = 181
+  ClientWidth = 457
   Color = clBtnFace
   Font.Charset = SHIFTJIS_CHARSET
   Font.Color = clWindowText
@@ -20,24 +20,24 @@ object ConfigForm: TConfigForm
   PixelsPerInch = 96
   TextHeight = 12
   object Label1: TLabel
-    Left = 14
-    Top = 24
+    Left = 10
+    Top = 10
     Width = 48
     Height = 12
     Caption = '&VIM path:'
     FocusControl = editVimPath
   end
   object Label2: TLabel
-    Left = 14
-    Top = 56
+    Left = 10
+    Top = 61
     Width = 110
     Height = 12
     Caption = '&MRU (mru_files) path:'
     FocusControl = editMruPath
   end
   object lblURL: TLabel
-    Left = 16
-    Top = 126
+    Left = 10
+    Top = 152
     Width = 256
     Height = 12
     Cursor = crHandPoint
@@ -53,22 +53,22 @@ object ConfigForm: TConfigForm
     OnMouseLeave = lblURLMouseLeave
   end
   object editVimPath: TEdit
-    Left = 136
-    Top = 20
-    Width = 289
+    Left = 10
+    Top = 25
+    Width = 411
     Height = 20
     TabOrder = 0
   end
   object editMruPath: TEdit
-    Left = 136
-    Top = 52
-    Width = 289
+    Left = 10
+    Top = 76
+    Width = 411
     Height = 20
     TabOrder = 2
   end
   object btnVimPath: TButton
-    Left = 430
-    Top = 20
+    Left = 426
+    Top = 25
     Width = 20
     Height = 20
     Caption = '...'
@@ -76,8 +76,8 @@ object ConfigForm: TConfigForm
     OnClick = btnVimPathClick
   end
   object btnMruPath: TButton
-    Left = 430
-    Top = 52
+    Left = 426
+    Top = 76
     Width = 20
     Height = 20
     Caption = '...'
@@ -85,8 +85,8 @@ object ConfigForm: TConfigForm
     OnClick = btnMruPathClick
   end
   object btnOK: TButton
-    Left = 296
-    Top = 120
+    Left = 291
+    Top = 146
     Width = 75
     Height = 25
     Caption = 'OK'
@@ -95,8 +95,8 @@ object ConfigForm: TConfigForm
     OnClick = btnOKClick
   end
   object btnCancel: TButton
-    Left = 376
-    Top = 120
+    Left = 371
+    Top = 146
     Width = 75
     Height = 25
     Cancel = True
@@ -105,25 +105,25 @@ object ConfigForm: TConfigForm
     OnClick = btnCancelClick
   end
   object chkTab: TCheckBox
-    Left = 14
-    Top = 88
+    Left = 10
+    Top = 114
     Width = 120
     Height = 17
     Caption = 'Open &tab page'
     TabOrder = 6
   end
   object imgIcon: TImageList
-    Left = 424
-    Top = 80
+    Left = 418
+    Top = 106
   end
   object OpenDialog: TOpenDialog
-    Left = 360
-    Top = 80
+    Left = 354
+    Top = 106
   end
   object menuMRU: TPopupMenu
     Images = imgIcon
-    Left = 392
-    Top = 80
+    Left = 386
+    Top = 106
     object N1: TMenuItem
       Caption = '-'
     end
@@ -186,7 +186,7 @@ object ConfigForm: TConfigForm
     IconIndex = 0
     PopupMenu = menuMRU
     OnMouseDown = TrayIconMouseDown
-    Left = 328
-    Top = 80
+    Left = 322
+    Top = 106
   end
 end
