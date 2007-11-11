@@ -71,11 +71,13 @@ type
     mruItems: TStringList;
     iniFile: String;
     isClose: Boolean;
+    SessionEnding: Boolean;
     procedure menuMRUClick(Sender: TObject);
     procedure ExecuteVim(path: String = '');
     procedure loadMUR(path: String = '');
     function SplitStrings(str: String; Delimiter: String; list: TStringList): Integer;
     function ExtractSmallIcon(filename: String; icon: TIcon): Integer;
+    procedure WMQueryEndSession(var Message: TMessage); message WM_QUERYENDSESSION;
   public
   end;
 
@@ -85,6 +87,12 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TConfigForm.WMQueryEndSession(var Message: TMessage);
+begin
+  SessionEnding := True;
+  Message.Result := 1;
+end;
 
 procedure TConfigForm.loadMUR(path: String = '');
 var
@@ -306,11 +314,11 @@ end;
 procedure TConfigForm.FormCloseQuery(Sender: TObject;
   var CanClose: Boolean);
 begin
-  if Not isClose then begin
-    CanClose := false;
-    Application.ShowMainForm := False;
-    ShowWindow(Application.Handle, SW_HIDE);
-    ConfigForm.Hide;
+  CanClose := (isClose or SessionEnding);
+  if not CanClose then
+  begin
+    TrayIcon.HideMainForm;
+    TrayIcon.IconVisible := True;
   end;
 end;
 

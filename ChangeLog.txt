@@ -1,3 +1,8 @@
+2007-11-11  SUNAOKA Norifumi  <sunaoka at gmail.com>
+
+	* UMain.pas: WMQueryEndSession, FormCloseQuery
+	Fix logging off and shutting down problem.
+
 2007-10-13  SUNAOKA Norifumi  <sunaoka at gmail.com>
 
 	* UMain.dfm:
