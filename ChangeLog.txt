@@ -1,5 +1,8 @@
 2007-11-11  SUNAOKA Norifumi  <sunaoka at gmail.com>
 
+	* vimtray.exe.manifest, manifest.rc, manifest.res:
+	Add manifest files.
+
 	* UMain.pas: WMQueryEndSession, FormCloseQuery
 	Fix logging off and shutting down problem.
 
