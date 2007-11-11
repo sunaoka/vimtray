@@ -1,5 +1,11 @@
 2007-11-11  SUNAOKA Norifumi  <sunaoka at gmail.com>
 
+	* version 1.1:
+	Release.
+
+	* vimtray.png, vimtray-config.png:
+	Update.
+
 	* UMain.pas: btnMruPathClick
 	Fix TOpenDialog filter for mru_files.
 
