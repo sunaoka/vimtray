@@ -289,7 +289,7 @@ end;
 
 procedure TConfigForm.btnMruPathClick(Sender: TObject);
 begin
-  OpenDialog.Filter := 'mru_files|mru_files';
+  OpenDialog.Filter := 'mru_files|*';
   if OpenDialog.Execute then begin
     editMruPath.Text := OpenDialog.FileName;
   end;
