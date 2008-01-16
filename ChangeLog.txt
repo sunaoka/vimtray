@@ -1,3 +1,11 @@
+2008-01-16  SUNAOKA Norifumi  <sunaoka at gmail.com>
+
+	* manifest.rc, vimtray.dpr:
+	Add copyright.
+
+	* UMain.pas, UShell.pas:
+	Change copyright.
+
 2007-11-11  SUNAOKA Norifumi  <sunaoka at gmail.com>
 
 	* version 1.1:
