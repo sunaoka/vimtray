@@ -1,3 +1,8 @@
+2008-01-12  SUNAOKA Norifumi  <sunaoka at gmail.com>
+
+	* svn:ignore:
+	Add *.~*
+
 2008-01-16  SUNAOKA Norifumi  <sunaoka at gmail.com>
 
 	* manifest.rc, vimtray.dpr:
